@@ -118,9 +118,12 @@ void loop() {
   }
 
   // We now create a URI for the request
-  String url = "/macros/s/AKfycbxN5wIySnPoCI9W0wrTRGqGr0mX0YaOtWlmErMEJDXZaxXjFvJII4fi1Rr3DC8BlIlkFw/exec";
-  url += "?";
+
+  String url = "/macros/s/AKfycbyB4mCWlPaNhrhnRbQfqduG4NpifsCZnbZKYal-LFHE5XrTr7wH1JCfxmgVgqGBX9Yg4w/exec";
+  url += "?temp=";
   url += String(t);
+  url += "&humid=";
+  url += String(h);
 
   Serial.print("Requesting URL: ");
   Serial.println(url);
